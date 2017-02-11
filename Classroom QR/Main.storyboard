@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="-1887" y="1103"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Main Class View Controller-->
         <scene sceneID="9Pw-co-x3J">
             <objects>
-                <viewController id="iV0-Zn-Gsd" customClass="SecondViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iV0-Zn-Gsd" customClass="MainClassViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o9m-I3-iAc"/>
                         <viewControllerLayoutGuide type="bottom" id="sgw-8J-3lP"/>
@@ -171,6 +171,9 @@
                                 <rect key="frame" x="144" y="263" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Student"/>
+                                <connections>
+                                    <action selector="addStudentButtonWithSender:" destination="iV0-Zn-Gsd" eventType="touchUpInside" id="l3R-4k-ScU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-zv-yii">
                                 <rect key="frame" x="106" y="333" width="163" height="30"/>
