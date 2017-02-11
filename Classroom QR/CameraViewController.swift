@@ -732,6 +732,37 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 			}
 		}
 	}
+    
+    /* 
+     
+     
+     
+     
+     
+     Here Be The Tap To Receive Results 
+     
+     
+     
+     
+     
+     */
+    
+    private lazy var grabAnswerGestureRecognizer: UITapGestureRecognizer = {
+        UITapGestureRecognizer(target: self, action: #selector(CameraViewController.openBarcodeURL(with:)))
+    }()
+    
+    @objc private func grabAnswer(with grabAnswerGestureRecognizer: UITapGestureRecognizer) {
+        for metadataObjectOverlayLayer in metadataObjectOverlayLayers {
+            if metadataObjectOverlayLayer.path!.contains(grabAnswerGestureRecognizer.location(in: previewView), using: .winding, transform: .identity) {
+                if let barcodeMetadataObject = metadataObjectOverlayLayer.metadataObject as? AVMetadataMachineReadableCodeObject {
+                    if barcodeMetadataObject.stringValue != nil {
+                        let received = barcodeMetadataObject.stringValue
+                        let space : String
+                    }
+                }
+            }
+        }
+    }
 	
 	// MARK: AVCaptureMetadataOutputObjectsDelegate
 	
