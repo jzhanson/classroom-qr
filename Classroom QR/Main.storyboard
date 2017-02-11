@@ -222,7 +222,6 @@
         <!--Navigation Controller-->
         <scene sceneID="gBx-Us-pXP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ckg-Ai-9ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="C1M-E9-x9N" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rL7-h3-a0Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -232,6 +231,7 @@
                         <segue destination="PGj-Kj-JkE" kind="relationship" relationship="rootViewController" id="eES-WX-MPm"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckg-Ai-9ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1052" y="2359"/>
         </scene>
@@ -622,7 +622,7 @@
             <objects>
                 <tableViewController id="PBC-n5-MIm" userLabel="Item Selection View Controller" customClass="ItemSelectionViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="N68-f6-mTy">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -682,6 +682,12 @@
             <point key="canvasLocation" x="2276" y="394"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AddStudentButton.png" width="473" height="87"/>
+        <image name="NewClassButton.png" width="474" height="88"/>
+        <image name="SelectClassButton.png" width="474" height="87"/>
+        <image name="SweepLogo" width="671" height="476"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dGm-JB-UMA"/>
         <segue reference="Gwm-GI-Bi6"/>
