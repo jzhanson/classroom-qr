@@ -39,25 +39,27 @@ class PreviewView: UIView, UIGestureRecognizerDelegate {
 		maskLayer.opacity = 0.6
 		layer.addSublayer(maskLayer)
 		
+        // We changed these things to get rid of the yellow border
+        
 		regionOfInterestOutline.path = UIBezierPath(rect: regionOfInterest).cgPath
 		regionOfInterestOutline.fillColor = UIColor.clear.cgColor
-		regionOfInterestOutline.strokeColor = UIColor.yellow.cgColor
+		regionOfInterestOutline.strokeColor = UIColor.clear.cgColor
 		layer.addSublayer(regionOfInterestOutline)
 		
 		topLeftControl.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: regionOfInterestControlDiameter, height: regionOfInterestControlDiameter)).cgPath
-		topLeftControl.fillColor = UIColor.white.cgColor
+		topLeftControl.fillColor = UIColor.clear.cgColor
 		layer.addSublayer(topLeftControl)
 		
 		topRightControl.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: regionOfInterestControlDiameter, height: regionOfInterestControlDiameter)).cgPath
-		topRightControl.fillColor = UIColor.white.cgColor
+		topRightControl.fillColor = UIColor.clear.cgColor
 		layer.addSublayer(topRightControl)
 		
 		bottomLeftControl.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: regionOfInterestControlDiameter, height: regionOfInterestControlDiameter)).cgPath
-		bottomLeftControl.fillColor = UIColor.white.cgColor
+		bottomLeftControl.fillColor = UIColor.clear.cgColor
 		layer.addSublayer(bottomLeftControl)
 		
 		bottomRightControl.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: regionOfInterestControlDiameter, height: regionOfInterestControlDiameter)).cgPath
-		bottomRightControl.fillColor = UIColor.white.cgColor
+		bottomRightControl.fillColor = UIColor.clear.cgColor
 		layer.addSublayer(bottomRightControl)
 		
 		/*

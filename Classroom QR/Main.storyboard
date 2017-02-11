@@ -26,7 +26,7 @@
                                 <rect key="frame" x="85" y="234" width="204" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Sweep"/>
                                 <connections>
                                     <segue destination="pYE-xa-CpI" kind="presentation" modalTransitionStyle="crossDissolve" id="1lM-8u-pcx"/>
                                 </connections>
@@ -37,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMS-Cu-dyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-449" y="388"/>
+            <point key="canvasLocation" x="-636" y="388"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="hlg-yS-qYF">
@@ -89,14 +89,14 @@
                                     <constraint firstAttribute="height" constant="36" id="wvY-TG-C33"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Presets"/>
+                                <state key="normal" title="Stop"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="GLg-Kk-VL1" kind="presentation" identifier="SelectSessionPreset" id="lq3-bM-d5h"/>
+                                    <segue destination="6f0-qq-duZ" kind="presentation" id="wBn-Ud-O74"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVm-ag-Lfj">
@@ -150,6 +150,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6K-l6-dJ5" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+        <!--Students-->
+        <scene sceneID="9We-bJ-321">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0O-MT-Spw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="xiC-RI-zid" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="772-QK-te7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ld5-gg-Ndl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wdn-X8-Dya">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="jsX-9V-Qo3"/>
+                    <navigationItem key="navigationItem" title="Students" id="dPb-yC-hfd"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2193" y="1871"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DLB-5j-xDT">
+            <objects>
+                <navigationController id="6f0-qq-duZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kCX-BV-uGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WbX-Dc-BBq" kind="relationship" relationship="rootViewController" id="X0G-UA-sK7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qea-Cw-G0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1543"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="TLq-VA-It0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opm-6E-v3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="yMg-Gx-9pB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w1D-1g-kdd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gIi-ys-pap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="riT-UK-xxh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="xua-3g-1xH"/>
+                    <navigationItem key="navigationItem" title="Results" id="iMx-QS-96M"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2193" y="1213"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="M9V-6b-drg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3W-gU-HY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="WbX-Dc-BBq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZBD-cF-cBh">
+                        <barButtonItem key="leftBarButtonItem" title="New Question" id="P8d-e8-Dev"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="SKh-uM-mYt">
+                            <connections>
+                                <segue destination="pYE-xa-CpI" kind="presentation" id="4kh-Nf-pTH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9WG-Bl-1uS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yMg-Gx-9pB" kind="relationship" relationship="viewControllers" id="QPO-U9-uX1"/>
+                        <segue destination="xiC-RI-zid" kind="relationship" relationship="viewControllers" id="szb-Ji-adv"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1249" y="1545"/>
         </scene>
         <!--Item Selection View Controller-->
         <scene sceneID="fTa-Za-MkS">
@@ -217,7 +299,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mrU-EN-8wF"/>
+        <segue reference="4kh-Nf-pTH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -664,9 +664,6 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 				    kCTStrokeColorAttributeName as String : UIColor.black.cgColor])
 				textLayer.isWrapped = true
                 
-<<<<<<< HEAD
-                print((textLayer.string as! NSAttributedString).string)
-=======
                 // Here is the yanking string out part
                 // print((textLayer.string as! NSAttributedString).string)
                 let currentInput = (textLayer.string as! NSAttributedString).string
@@ -674,7 +671,6 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                     persistData.input.insert((textLayer.string as! NSAttributedString).string)
                 }
                 print(persistData.input)
->>>>>>> 7e35a1a66734b8de7d7d716f7dfd2de97015f17d
 				
 				// Invert the effect of transform of the video preview so the text is orientated with the interface orientation.
 				textLayer.transform = CATransform3DInvert(CATransform3DMakeAffineTransform(previewView.transform))
