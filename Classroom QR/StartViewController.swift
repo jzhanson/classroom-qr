@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+struct persistData {
+    static var students : [String:Int] = ["Josh" : 0, "Emilie" : 0, "Jennifer" : 0, "Ben" : 0]
+}
+
 class StartViewController: UIViewController {
 
     override func viewDidLoad() {
