@@ -55,7 +55,8 @@ class Student {
                 let answer = element[n - 1]
                 history[questionNum] = answer
             }
-        history[questionNum] = "0"
+        history[questionNum] = "-"
+        }
     }
 
 }
