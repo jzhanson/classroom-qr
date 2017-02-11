@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8QL-B6-1VL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8QL-B6-1VL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="New Class"/>
                                 <connections>
-                                    <segue destination="yFv-xS-Lau" kind="presentation" id="zfQ-p0-G5s"/>
+                                    <segue destination="dZB-2n-edJ" kind="presentation" id="Poe-g3-PGX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgx-uU-L1i">
@@ -47,6 +47,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMS-Cu-dyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1887" y="359"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eeb-4e-UJD">
+            <objects>
+                <navigationController id="dZB-2n-edJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OVQ-1s-yAm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yFv-xS-Lau" kind="relationship" relationship="rootViewController" id="v9c-Qu-ehX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txq-gL-E7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1058" y="358"/>
         </scene>
         <!--New Class View Controller-->
         <scene sceneID="vea-HA-mBa">
@@ -67,34 +83,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBD-BU-HYK">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="myUnwindActionWithSender:" destination="yFv-xS-Lau" eventType="touchUpInside" id="gbC-k1-wAW"/>
-                                    <segue destination="8QL-B6-1VL" kind="presentation" id="e90-FL-64x"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxe-eT-ch7">
                                 <rect key="frame" x="144" y="318" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Class"/>
                                 <connections>
                                     <action selector="addClassWithSender:" destination="yFv-xS-Lau" eventType="touchUpInside" id="1Qw-Hb-f2R"/>
-                                    <segue destination="gsB-Yt-98Z" kind="presentation" id="ops-6y-4Qg"/>
+                                    <segue destination="iV0-Zn-Gsd" kind="presentation" id="Ptk-9H-QJE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EtD-Vv-oKK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c2q-PF-Jvn"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="className" destination="FfV-n0-dJH" id="9qu-GN-bot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMx-Uh-vgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1097" y="358"/>
+            <point key="canvasLocation" x="-246" y="358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pub-aM-Lrq">
@@ -129,38 +139,6 @@
             </objects>
             <point key="canvasLocation" x="-1887" y="1103"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="J4V-UN-The">
-            <objects>
-                <viewController id="ZdP-Xx-QsD" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0xR-ng-R8O"/>
-                        <viewControllerLayoutGuide type="bottom" id="1Pp-HL-BXs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="145-ss-Qiq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHA-JJ-qtx">
-                                <rect key="frame" x="141" y="28" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-xI-ldh">
-                                <rect key="frame" x="67" y="96" width="240" height="474"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXU-Bv-XaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="497" y="394"/>
-        </scene>
         <!--Second View Controller-->
         <scene sceneID="9Pw-co-x3J">
             <objects>
@@ -189,9 +167,6 @@
                                 <rect key="frame" x="144" y="263" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Student"/>
-                                <connections>
-                                    <segue destination="gsB-Yt-98Z" kind="show" id="HjJ-fV-Eqn"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-zv-yii">
                                 <rect key="frame" x="106" y="333" width="163" height="30"/>
@@ -202,9 +177,6 @@
                                 <rect key="frame" x="198" y="460" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Question"/>
-                                <connections>
-                                    <segue destination="ZdP-Xx-QsD" kind="presentation" id="pbr-Gv-PfV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beE-tt-Sqm">
                                 <rect key="frame" x="44" y="460" width="93" height="30"/>
@@ -371,46 +343,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3W-AF-EIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2276" y="2329"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ZMv-b6-mnf">
-            <objects>
-                <viewController id="gsB-Yt-98Z" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AtY-Jx-fat"/>
-                        <viewControllerLayoutGuide type="bottom" id="zau-Bw-pRg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="S2X-jQ-IbW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Student's Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hml-3R-m43">
-                                <rect key="frame" x="125" y="201" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.77416015625000001" green="0.77416015625000001" blue="0.77416015625000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="car-qO-Cz6">
-                                <rect key="frame" x="144" y="267" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Student"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-2f-zac">
-                                <rect key="frame" x="169" y="572" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <segue destination="iV0-Zn-Gsd" kind="presentation" id="4wb-Vz-Rw3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdy-2M-UFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-334" y="352"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="hlg-yS-qYF">
@@ -672,8 +604,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e90-FL-64x"/>
-        <segue reference="ops-6y-4Qg"/>
         <segue reference="dGm-JB-UMA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
