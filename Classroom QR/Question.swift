@@ -26,5 +26,21 @@ class Question {
     func addStudentAnswers (child : Student, answer : String) {
         // studentAnswers[child] = answer
     }
+    
+    func sweep() {
+    let bob = Student(firstName: "Bob")
+    
+    let fatigue = Student(firstName: "La Fatigue.")
+    
+    let testtwo = Student(firstName : "Test T")
+    let test = Student(firstName: "Test")
+    
+    let listOfStudents = [bob, fatigue, testtwo, test]
+    for student in listOfStudents {
+        student.addStudentAnswer(questionNum : 1, sweepSet : persistData.input)
+        print(student.name)
+        print(student.history)
+    }
+    }
 }
 

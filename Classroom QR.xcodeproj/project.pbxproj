@@ -28,6 +28,11 @@
 		7071BC101E4F7FB5005374F7 /* QuestionsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC0F1E4F7FB5005374F7 /* QuestionsButton.png */; };
 		7071BC121E4F7FBE005374F7 /* GenerateAnswerCardsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC111E4F7FBE005374F7 /* GenerateAnswerCardsButton.png */; };
 		7071BC141E4F808F005374F7 /* CreateClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC131E4F808F005374F7 /* CreateClassButton.png */; };
+		7071BC161E4F8A49005374F7 /* AddStudentButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC151E4F8A49005374F7 /* AddStudentButton.png */; };
+		7071BC181E4F8A5F005374F7 /* QuestionsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC171E4F8A5F005374F7 /* QuestionsButton.png */; };
+		7071BC1A1E4F8A65005374F7 /* GenerateAnswerCardsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */; };
+		7071BC1C1E4F8A6A005374F7 /* SelectClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC1B1E4F8A6A005374F7 /* SelectClassButton.png */; };
+		7071BC1E1E4F8A6F005374F7 /* NewClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC1D1E4F8A6F005374F7 /* NewClassButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +58,11 @@
 		7071BC0F1E4F7FB5005374F7 /* QuestionsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = QuestionsButton.png; path = ../../../Downloads/QuestionsButton.png; sourceTree = "<group>"; };
 		7071BC111E4F7FBE005374F7 /* GenerateAnswerCardsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GenerateAnswerCardsButton.png; path = ../../../Downloads/GenerateAnswerCardsButton.png; sourceTree = "<group>"; };
 		7071BC131E4F808F005374F7 /* CreateClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CreateClassButton.png; path = ../../../Downloads/CreateClassButton.png; sourceTree = "<group>"; };
+		7071BC151E4F8A49005374F7 /* AddStudentButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddStudentButton.png; path = Assets.xcassets/AddStudentButton.png; sourceTree = "<group>"; };
+		7071BC171E4F8A5F005374F7 /* QuestionsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = QuestionsButton.png; path = Assets.xcassets/QuestionsButton.png; sourceTree = "<group>"; };
+		7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GenerateAnswerCardsButton.png; path = Assets.xcassets/GenerateAnswerCardsButton.png; sourceTree = "<group>"; };
+		7071BC1B1E4F8A6A005374F7 /* SelectClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SelectClassButton.png; path = Assets.xcassets/SelectClassButton.png; sourceTree = "<group>"; };
+		7071BC1D1E4F8A6F005374F7 /* NewClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewClassButton.png; path = Assets.xcassets/NewClassButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,13 @@
 				298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */,
 				7071BBEF1E4EF3C0005374F7 /* classroom.swift */,
 				29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */,
+				7071BC151E4F8A49005374F7 /* AddStudentButton.png */,
 				7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */,
 				7071BC111E4F7FBE005374F7 /* GenerateAnswerCardsButton.png */,
+				7071BC1D1E4F8A6F005374F7 /* NewClassButton.png */,
+				7071BC1B1E4F8A6A005374F7 /* SelectClassButton.png */,
+				7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */,
+				7071BC171E4F8A5F005374F7 /* QuestionsButton.png */,
 				7071BC131E4F808F005374F7 /* CreateClassButton.png */,
 				7071BC0D1E4F7FAC005374F7 /* AddStudentButton.png */,
 				7071BC091E4F7EAB005374F7 /* SelectClassButton.png */,
@@ -171,13 +186,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */,
+				7071BC1E1E4F8A6F005374F7 /* NewClassButton.png in Resources */,
 				7071BC081E4F7E94005374F7 /* NewClassButton.png in Resources */,
+				7071BC1A1E4F8A65005374F7 /* GenerateAnswerCardsButton.png in Resources */,
 				7071BC0A1E4F7EAB005374F7 /* SelectClassButton.png in Resources */,
 				7071BC0E1E4F7FAC005374F7 /* AddStudentButton.png in Resources */,
 				7071BC0C1E4F7EC1005374F7 /* SweepLogo.png in Resources */,
 				7071BC101E4F7FB5005374F7 /* QuestionsButton.png in Resources */,
+				7071BC161E4F8A49005374F7 /* AddStudentButton.png in Resources */,
 				7071BC121E4F7FBE005374F7 /* GenerateAnswerCardsButton.png in Resources */,
 				294FF4A91E4EA76100DC6E82 /* Info.plist in Resources */,
+				7071BC1C1E4F8A6A005374F7 /* SelectClassButton.png in Resources */,
+				7071BC181E4F8A5F005374F7 /* QuestionsButton.png in Resources */,
 				7071BC141E4F808F005374F7 /* CreateClassButton.png in Resources */,
 				294FF4A21E4EA57A00DC6E82 /* Main.storyboard in Resources */,
 			);
