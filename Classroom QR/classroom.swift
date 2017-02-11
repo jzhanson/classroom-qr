@@ -19,7 +19,7 @@ class classroom {
     }
     
     func addStudent(studentName : String){
-        students.append(Student(firstName: studentName, QA:[:]))
+        students.append(Student(firstName: studentName))
     }
     
     func generateQr(){
