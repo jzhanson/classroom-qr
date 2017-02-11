@@ -37,19 +37,26 @@ extension String {
     
 }
 
+
 class Student {
+    var name = ""
+    var history = [1: "A"]
     
-    struct Student {
-        var name = ""
-        var history = [1 : "A"]
+    init(firstName : String, QA : Dictionary<Int, String>) {
+        self.name = firstName
+        self.history = QA
     }
     
-    func addScore (input : String) {
-        let n = input.length
-        let answer = input[n - 1]
-        let name = input[0..<(n-1)]
-        print(answer)
-        print(name)
+    func addStudentAnswer (questionNum : Int, sweepSet : Set<String>) {
+        for element in sweepSet {
+            let n = element.length
+            let studentName = element[n-2]
+            if (studentName== name) {
+                let answer = input[n - 1]
+                history[questionNum] = answer
+            }
+        }
+        history[questionNum] = '0'
     }
-    
+
 }
