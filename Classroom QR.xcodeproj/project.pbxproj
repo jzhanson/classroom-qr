@@ -30,6 +30,7 @@
 		294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
 		294FF4A81E4EA76100DC6E82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCodeViewController.swift; sourceTree = "<group>"; };
+		298C97E41E4F889C00462485 /* Classroom QR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Classroom QR.entitlements"; sourceTree = "<group>"; };
 		29C2F3CA1E4EA0E600C0C940 /* Classroom QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classroom QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		29C2F3CC1E4EA0E600C0C940 /* Classroom QR */ = {
 			isa = PBXGroup;
 			children = (
+				298C97E41E4F889C00462485 /* Classroom QR.entitlements */,
 				29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */,
 				29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */,
 				7071BBF11E4F568F005374F7 /* NewClassViewController.swift */,
@@ -121,8 +123,13 @@
 				TargetAttributes = {
 					29C2F3C91E4EA0E600C0C940 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 744WVDY3NJ;
+						DevelopmentTeam = K72FJPB7L5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -276,7 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 744WVDY3NJ;
+				DEVELOPMENT_TEAM = K72FJPB7L5;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
@@ -289,7 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 744WVDY3NJ;
+				DEVELOPMENT_TEAM = K72FJPB7L5;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
