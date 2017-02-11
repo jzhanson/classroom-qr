@@ -658,6 +658,8 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 				    kCTStrokeWidthAttributeName as String : -5.0,
 				    kCTStrokeColorAttributeName as String : UIColor.black.cgColor])
 				textLayer.isWrapped = true
+                
+                print(textLayer.string!)
 				
 				// Invert the effect of transform of the video preview so the text is orientated with the interface orientation.
 				textLayer.transform = CATransform3DInvert(CATransform3DMakeAffineTransform(previewView.transform))
@@ -762,7 +764,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                         for (student, count) in persistData.students {
                             if student == received {
                                 persistData.students[student]! += 1
-                                print(persistData.students[student])
+                                print(persistData.students[student]!)
                             }
                         }
                         
