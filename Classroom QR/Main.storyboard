@@ -169,47 +169,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-zv-yii">
-                                <rect key="frame" x="106" y="333" width="163" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-zv-yii">
+                                <rect key="frame" x="67" y="524" width="240" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Generate Answer Cards"/>
+                                <state key="normal" title="Generate Answer Cards" image="GenerateAnswerCardsButton.png"/>
                                 <connections>
                                     <segue destination="6Tk-n6-lSB" kind="presentation" id="hlk-zp-gzT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-EW-mb1">
-                                <rect key="frame" x="198" y="460" width="109" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-B8-zbE">
+                                <rect key="frame" x="67" y="584" width="240" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Question"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beE-tt-Sqm">
-                                <rect key="frame" x="44" y="460" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Question"/>
+                                <state key="normal" title="Questions" image="QuestionsButton.png"/>
                                 <connections>
-                                    <segue destination="Ct8-xz-686" kind="presentation" id="rDc-Ko-ViQ"/>
+                                    <segue destination="Km5-sk-fHZ" kind="presentation" id="gKV-K3-14J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nZ-MO-Uvn">
-                                <rect key="frame" x="144" y="536" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-L3-nBb">
+                                <rect key="frame" x="67" y="467" width="240" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ask Question"/>
-                                <connections>
-                                    <segue destination="pYE-xa-CpI" kind="presentation" id="dGm-JB-UMA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-B8-zbE">
-                                <rect key="frame" x="138" y="398" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Question Log"/>
-                                <connections>
-                                    <segue destination="Km5-sk-fHZ" kind="presentation" id="uHE-Sd-Cvp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-L3-nBb">
-                                <rect key="frame" x="144" y="266" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Student"/>
+                                <state key="normal" title="Add Student" image="AddStudentButton.png"/>
                                 <connections>
                                     <action selector="showEnterStudentAlertWithSender:" destination="iV0-Zn-Gsd" eventType="touchUpInside" id="mjT-35-ulB"/>
                                 </connections>
@@ -327,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scJ-06-5vP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="2329.385307346327"/>
+            <point key="canvasLocation" x="-284" y="2330"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OZu-79-QXP">
@@ -643,12 +622,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AddStudentButton.png" width="473" height="87"/>
+        <image name="GenerateAnswerCardsButton.png" width="473" height="88"/>
         <image name="NewClassButton.png" width="474" height="88"/>
+        <image name="QuestionsButton.png" width="474" height="86"/>
         <image name="SelectClassButton.png" width="474" height="87"/>
         <image name="SweepLogo" width="671" height="476"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="dGm-JB-UMA"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
