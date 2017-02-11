@@ -51,12 +51,11 @@ class Student {
         for element in sweepSet {
             let n = element.length
             let studentName = element[n-2]
-            if (studentName== name) {
-                let answer = input[n - 1]
+            if (studentName == name) {
+                let answer = element[n - 1]
                 history[questionNum] = answer
             }
-        }
-        history[questionNum] = '0'
+        history[questionNum] = "0"
     }
 
 }
