@@ -17,6 +17,7 @@
 		29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */; };
 		7071BBEC1E4EB894005374F7 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEB1E4EB894005374F7 /* Student.swift */; };
 		7071BBF01E4EF3C0005374F7 /* classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEF1E4EF3C0005374F7 /* classroom.swift */; };
+		7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF11E4F568F005374F7 /* NewClassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7071BBEB1E4EB894005374F7 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		7071BBEF1E4EF3C0005374F7 /* classroom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classroom.swift; sourceTree = "<group>"; };
+		7071BBF11E4F568F005374F7 /* NewClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */,
 				29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */,
+				7071BBF11E4F568F005374F7 /* NewClassViewController.swift */,
 				294FF49F1E4EA57300DC6E82 /* PreviewView.swift */,
 				7071BBEB1E4EB894005374F7 /* Student.swift */,
 				294FF49D1E4EA54A00DC6E82 /* CameraViewController.swift */,
@@ -156,6 +159,7 @@
 				29C2F3CE1E4EA0E600C0C940 /* AppDelegate.swift in Sources */,
 				7071BBF01E4EF3C0005374F7 /* classroom.swift in Sources */,
 				294FF49E1E4EA54A00DC6E82 /* CameraViewController.swift in Sources */,
+				7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */,
 				294FF4A41E4EA5BD00DC6E82 /* ItemSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

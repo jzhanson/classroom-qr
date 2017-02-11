@@ -18,7 +18,7 @@ class PreviewView: UIView, UIGestureRecognizerDelegate {
 		case bottomLeft
 		case bottomRight
 	}
-	
+    
 	// MARK: Initialization
 	
 	override init(frame: CGRect) {
