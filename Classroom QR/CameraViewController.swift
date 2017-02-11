@@ -9,6 +9,11 @@
 import UIKit
 import AVFoundation
 
+/*
+Student andrew = Student()
+andrew.name = "Andrew"
+andrew.history = [1: "A"]
+*/
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, ItemSelectionViewControllerDelegate {
 	// MARK: View Controller Life Cycle
 	
@@ -659,7 +664,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 				    kCTStrokeColorAttributeName as String : UIColor.black.cgColor])
 				textLayer.isWrapped = true
                 
-                print(textLayer.string!)
+                print((textLayer.string as! NSAttributedString).string)
 				
 				// Invert the effect of transform of the video preview so the text is orientated with the interface orientation.
 				textLayer.transform = CATransform3DInvert(CATransform3DMakeAffineTransform(previewView.transform))

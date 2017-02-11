@@ -45,12 +45,11 @@ class Student {
     }
     
     func addScore (input : String) {
-        if input.isEmpty {
-            print("QR value returns empty string")
-        }
-        else {
-            
-        }
+        let n = input.length
+        let answer = input[n - 1]
+        let name = input[0..<(n-1)]
+        print(answer)
+        print(name)
     }
     
 }
