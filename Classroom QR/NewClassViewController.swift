@@ -12,9 +12,9 @@ import UIKit
 
 class NewClassViewController: UIViewController {
 
-    @IBAction func myUnwindAction (sender: UIButton) {
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+    @IBAction func cancelButton (sender: UIBarButtonItem) {
+        //navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBOutlet var className: UITextField?

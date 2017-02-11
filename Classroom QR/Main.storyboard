@@ -96,7 +96,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EtD-Vv-oKK">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c2q-PF-Jvn"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c2q-PF-Jvn">
+                            <connections>
+                                <action selector="cancelButtonWithSender:" destination="yFv-xS-Lau" id="bU3-M6-S4o"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="className" destination="FfV-n0-dJH" id="9qu-GN-bot"/>
