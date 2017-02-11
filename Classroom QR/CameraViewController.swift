@@ -22,7 +22,10 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 		zoomSlider.isEnabled = false
 		
 		// Add the open barcode gesture recognizer to the region of interest view.
-		previewView.addGestureRecognizer(openBarcodeURLGestureRecognizer)
+		// previewView.addGestureRecognizer(openBarcodeURLGestureRecognizer)
+        
+        // Add the grabbing answer gesture recognizer.
+        previewView.addGestureRecognizer(grabAnswerGestureRecognizer)
 		
 		// Set up the video preview view.
 		previewView.session = session
@@ -748,16 +751,21 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
      */
     
     private lazy var grabAnswerGestureRecognizer: UITapGestureRecognizer = {
-        UITapGestureRecognizer(target: self, action: #selector(CameraViewController.openBarcodeURL(with:)))
+        UITapGestureRecognizer(target: self, action: #selector(CameraViewController.grabAnswer(with:)))
     }()
     
     @objc private func grabAnswer(with grabAnswerGestureRecognizer: UITapGestureRecognizer) {
         for metadataObjectOverlayLayer in metadataObjectOverlayLayers {
             if metadataObjectOverlayLayer.path!.contains(grabAnswerGestureRecognizer.location(in: previewView), using: .winding, transform: .identity) {
                 if let barcodeMetadataObject = metadataObjectOverlayLayer.metadataObject as? AVMetadataMachineReadableCodeObject {
-                    if barcodeMetadataObject.stringValue != nil {
-                        let received = barcodeMetadataObject.stringValue
-                        let space : String
+                    if let received = barcodeMetadataObject.stringValue {
+                        for (student, count) in persistData.students {
+                            if student == received {
+                                persistData.students[student]! += 1
+                                print(persistData.students[student])
+                            }
+                        }
+                        
                     }
                 }
             }
