@@ -674,13 +674,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                     print(student.name)
                     print(student.history)
                 }
-                /*
-                for i in persistData.input {
-                    let len = i.length - 2
-                    let studentName = i[0..<len]
-                    
-                }
-*/
+
                 // Here is the yanking string out part
                 // print((textLayer.string as! NSAttributedString).string)
                 let currentInput = (textLayer.string as! NSAttributedString).string
