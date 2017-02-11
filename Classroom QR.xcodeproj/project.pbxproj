@@ -21,6 +21,9 @@
 		7071BBF01E4EF3C0005374F7 /* classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEF1E4EF3C0005374F7 /* classroom.swift */; };
 		7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF11E4F568F005374F7 /* NewClassViewController.swift */; };
 		7071BBF41E4F6B53005374F7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF31E4F6B53005374F7 /* Question.swift */; };
+		7071BC081E4F7E94005374F7 /* NewClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC071E4F7E94005374F7 /* NewClassButton.png */; };
+		7071BC0A1E4F7EAB005374F7 /* SelectClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC091E4F7EAB005374F7 /* SelectClassButton.png */; };
+		7071BC0C1E4F7EC1005374F7 /* SweepLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		7071BBEF1E4EF3C0005374F7 /* classroom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classroom.swift; sourceTree = "<group>"; };
 		7071BBF11E4F568F005374F7 /* NewClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
 		7071BBF31E4F6B53005374F7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		7071BC071E4F7E94005374F7 /* NewClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewClassButton.png; path = ../../../Downloads/NewClassButton.png; sourceTree = "<group>"; };
+		7071BC091E4F7EAB005374F7 /* SelectClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SelectClassButton.png; path = ../../../Downloads/SelectClassButton.png; sourceTree = "<group>"; };
+		7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SweepLogo.png; path = ../../../Downloads/SweepLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 				294FF49D1E4EA54A00DC6E82 /* CameraViewController.swift */,
 				294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */,
 				294FF4A11E4EA57A00DC6E82 /* Main.storyboard */,
+				7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */,
+				7071BC091E4F7EAB005374F7 /* SelectClassButton.png */,
+				7071BC071E4F7E94005374F7 /* NewClassButton.png */,
 				7071BBF31E4F6B53005374F7 /* Question.swift */,
 				29E205701E4F67800050CF0D /* MainClassViewController.swift */,
 				298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */,
@@ -150,6 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */,
+				7071BC081E4F7E94005374F7 /* NewClassButton.png in Resources */,
+				7071BC0A1E4F7EAB005374F7 /* SelectClassButton.png in Resources */,
+				7071BC0C1E4F7EC1005374F7 /* SweepLogo.png in Resources */,
 				294FF4A91E4EA76100DC6E82 /* Info.plist in Resources */,
 				294FF4A21E4EA57A00DC6E82 /* Main.storyboard in Resources */,
 			);

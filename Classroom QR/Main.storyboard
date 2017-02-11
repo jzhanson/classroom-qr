@@ -22,20 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btu-BA-IId">
-                                <rect key="frame" x="97" y="412" width="181" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btu-BA-IId">
+                                <rect key="frame" x="37" y="529" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="New Class"/>
+                                <state key="normal" title="New Class" image="NewClassButton.png"/>
                                 <connections>
                                     <segue destination="dZB-2n-edJ" kind="presentation" id="Poe-g3-PGX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgx-uU-L1i">
-                                <rect key="frame" x="85" y="206" width="204" height="198"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SweepLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-mC-LMI">
+                                <rect key="frame" x="27" y="96" width="332" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Select Class"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgx-uU-L1i">
+                                <rect key="frame" x="37" y="443" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Class" image="SelectClassButton.png"/>
                                 <connections>
                                     <segue destination="JD4-e3-zTP" kind="presentation" id="xo1-f8-WhC"/>
                                 </connections>
@@ -46,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMS-Cu-dyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1887" y="359"/>
+            <point key="canvasLocation" x="-1887.2" y="358.4707646176912"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eeb-4e-UJD">
@@ -585,14 +587,14 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item" textLabel="R6q-rR-Tno" style="IBUITableViewCellStyleDefault" id="PJ2-9Z-PLE">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJ2-9Z-PLE" id="qQK-uf-VyZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6q-rR-Tno">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -640,6 +642,11 @@
             <point key="canvasLocation" x="2276" y="394"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NewClassButton.png" width="474" height="88"/>
+        <image name="SelectClassButton.png" width="474" height="87"/>
+        <image name="SweepLogo" width="671" height="476"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dGm-JB-UMA"/>
     </inferredMetricsTieBreakers>
