@@ -89,7 +89,7 @@
                                 <state key="normal" title="Create Class"/>
                                 <connections>
                                     <action selector="addClassWithSender:" destination="yFv-xS-Lau" eventType="touchUpInside" id="1Qw-Hb-f2R"/>
-                                    <segue destination="iV0-Zn-Gsd" kind="presentation" id="Ptk-9H-QJE"/>
+                                    <segue destination="iV0-Zn-Gsd" kind="presentation" id="rlc-lp-Khb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,7 +146,7 @@
         <!--Main Class View Controller-->
         <scene sceneID="9Pw-co-x3J">
             <objects>
-                <viewController id="iV0-Zn-Gsd" customClass="MainClassViewController" sceneMemberID="viewController">
+                <viewController id="iV0-Zn-Gsd" customClass="MainClassViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o9m-I3-iAc"/>
                         <viewControllerLayoutGuide type="bottom" id="sgw-8J-3lP"/>
@@ -167,14 +167,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVH-UV-FDg">
-                                <rect key="frame" x="144" y="263" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Student"/>
-                                <connections>
-                                    <action selector="addStudentButtonWithSender:" destination="iV0-Zn-Gsd" eventType="touchUpInside" id="l3R-4k-ScU"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-zv-yii">
                                 <rect key="frame" x="106" y="333" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -209,13 +201,21 @@
                                     <segue destination="Km5-sk-fHZ" kind="presentation" id="uHE-Sd-Cvp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-L3-nBb">
+                                <rect key="frame" x="144" y="266" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Student"/>
+                                <connections>
+                                    <action selector="showEnterStudentAlertWithSender:" destination="iV0-Zn-Gsd" eventType="touchUpInside" id="mjT-35-ulB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwX-Ep-uem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1058" y="1549"/>
+            <point key="canvasLocation" x="-1058.4000000000001" y="1548.5757121439281"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GnW-FA-i9s">
@@ -555,14 +555,14 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item" textLabel="R6q-rR-Tno" style="IBUITableViewCellStyleDefault" id="PJ2-9Z-PLE">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJ2-9Z-PLE" id="qQK-uf-VyZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6q-rR-Tno">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
