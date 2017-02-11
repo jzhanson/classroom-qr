@@ -19,15 +19,12 @@ class MainClassViewController: UIViewController {
         
     }
     
-    @IBAction func addStudentButton(sender: UIButton) {
-        showEnterStudentAlert()
-    }
-    
-    func showEnterStudentAlert() {
+    @IBAction func showEnterStudentAlert(sender: UIButton) {
         let message = "Enter student name."
         let pushPrompt = UIAlertController(title: "New student", message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
             // Put actions here
+            // text = pushPrompt.textFields![0].text)!
         })
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in })
         pushPrompt.addAction(ok)

@@ -12,7 +12,7 @@ import UIKit
 
 class NewClassViewController: UIViewController {
 
-    @IBAction func cancelButton (sender: UIBarButtonItem) {
+    @IBAction func cancelButton(sender: UIBarButtonItem) {
         //navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
