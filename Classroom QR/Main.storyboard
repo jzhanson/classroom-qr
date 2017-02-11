@@ -492,7 +492,11 @@
                                 <action selector="showEnterQuestionAlertWithSender:" destination="eEL-gt-wHh" id="9sf-XQ-7P1"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="hC1-Ge-yFR"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="hC1-Ge-yFR">
+                            <connections>
+                                <segue destination="iV0-Zn-Gsd" kind="presentation" id="M71-8f-htm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaS-Ea-VQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -597,7 +601,7 @@
         <image name="SweepLogo" width="671" height="476"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rlc-lp-Khb"/>
+        <segue reference="M71-8f-htm"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
