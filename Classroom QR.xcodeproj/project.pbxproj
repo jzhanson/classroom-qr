@@ -20,6 +20,7 @@
 		7071BBEC1E4EB894005374F7 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEB1E4EB894005374F7 /* Student.swift */; };
 		7071BBF01E4EF3C0005374F7 /* classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEF1E4EF3C0005374F7 /* classroom.swift */; };
 		7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF11E4F568F005374F7 /* NewClassViewController.swift */; };
+		7071BBF41E4F6B53005374F7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF31E4F6B53005374F7 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7071BBEB1E4EB894005374F7 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		7071BBEF1E4EF3C0005374F7 /* classroom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classroom.swift; sourceTree = "<group>"; };
 		7071BBF11E4F568F005374F7 /* NewClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
+		7071BBF31E4F6B53005374F7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				294FF49D1E4EA54A00DC6E82 /* CameraViewController.swift */,
 				294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */,
 				294FF4A11E4EA57A00DC6E82 /* Main.storyboard */,
+				7071BBF31E4F6B53005374F7 /* Question.swift */,
 				29E205701E4F67800050CF0D /* MainClassViewController.swift */,
 				298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */,
 				7071BBEF1E4EF3C0005374F7 /* classroom.swift */,
@@ -118,7 +121,7 @@
 				TargetAttributes = {
 					29C2F3C91E4EA0E600C0C940 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = K72FJPB7L5;
+						DevelopmentTeam = 744WVDY3NJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -165,6 +168,7 @@
 				29C2F3D01E4EA0E600C0C940 /* StartViewController.swift in Sources */,
 				294FF4A01E4EA57300DC6E82 /* PreviewView.swift in Sources */,
 				29C2F3CE1E4EA0E600C0C940 /* AppDelegate.swift in Sources */,
+				7071BBF41E4F6B53005374F7 /* Question.swift in Sources */,
 				7071BBF01E4EF3C0005374F7 /* classroom.swift in Sources */,
 				294FF49E1E4EA54A00DC6E82 /* CameraViewController.swift in Sources */,
 				7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */,
@@ -272,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K72FJPB7L5;
+				DEVELOPMENT_TEAM = 744WVDY3NJ;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
@@ -285,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K72FJPB7L5;
+				DEVELOPMENT_TEAM = 744WVDY3NJ;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";

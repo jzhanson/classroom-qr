@@ -40,7 +40,7 @@ extension String {
 
 class Student {
     var name = ""
-    var history = [1: "A"]
+    var history = [Int : String]()
     
     init(firstName : String, QA : Dictionary<Int, String>) {
         self.name = firstName
