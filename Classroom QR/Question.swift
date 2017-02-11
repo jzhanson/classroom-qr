@@ -13,7 +13,7 @@ class Question {
     
     var question = ""
     var solution = ""
-    var studentAnswers = [Student : String]()
+    var studentAnswers = [String : String]()
 
     init (inquiry : String) {
         self.question = inquiry
@@ -23,7 +23,7 @@ class Question {
         solution = sol
     }
     
-    func addStudentAnswers (child : Student, answer : String) {
+    func addStudentAnswers (child : String, answer : String) {
         studentAnswers[child] = answer
     }
 }
