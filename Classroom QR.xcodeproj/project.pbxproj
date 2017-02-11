@@ -26,6 +26,7 @@
 		7071BC1A1E4F8A65005374F7 /* GenerateAnswerCardsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */; };
 		7071BC1C1E4F8A6A005374F7 /* SelectClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC1B1E4F8A6A005374F7 /* SelectClassButton.png */; };
 		7071BC1E1E4F8A6F005374F7 /* NewClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC1D1E4F8A6F005374F7 /* NewClassButton.png */; };
+		7071BC201E4FA00F005374F7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BC1F1E4FA00F005374F7 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GenerateAnswerCardsButton.png; path = Assets.xcassets/GenerateAnswerCardsButton.png; sourceTree = "<group>"; };
 		7071BC1B1E4F8A6A005374F7 /* SelectClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SelectClassButton.png; path = Assets.xcassets/SelectClassButton.png; sourceTree = "<group>"; };
 		7071BC1D1E4F8A6F005374F7 /* NewClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewClassButton.png; path = Assets.xcassets/NewClassButton.png; sourceTree = "<group>"; };
+		7071BC1F1E4FA00F005374F7 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				294FF49D1E4EA54A00DC6E82 /* CameraViewController.swift */,
 				294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */,
 				294FF4A11E4EA57A00DC6E82 /* Main.storyboard */,
+				7071BC1F1E4FA00F005374F7 /* ResultsViewController.swift */,
 				7071BBF31E4F6B53005374F7 /* Question.swift */,
 				29E205701E4F67800050CF0D /* MainClassViewController.swift */,
 				298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */,
@@ -200,6 +203,7 @@
 				294FF49E1E4EA54A00DC6E82 /* CameraViewController.swift in Sources */,
 				7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */,
 				294FF4A41E4EA5BD00DC6E82 /* ItemSelectionViewController.swift in Sources */,
+				7071BC201E4FA00F005374F7 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

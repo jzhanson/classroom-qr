@@ -11,13 +11,18 @@ import UIKit
 
 class Question {
     
-    var question = 0
+    var questionNum = 0
+    var question = ""
     var solution = ""
     var students = [Student]()
     var studentAnswers = [String : String]()
 
-    init (inquiry : String) {
-        self.question = inquiry
+    init (num: Int) {
+        self.questionNum = num
+    }
+    
+    func question(q : String) {
+        question = q
     }
     
     func addSolution(sol : String) {
@@ -33,12 +38,7 @@ class Question {
     }
     //sweep takes in output of QR code scanning and list of student objects...
     func sweep(sweepResult : Set<String> ) {
-        let Bob = Student(firstName: "Bob")
-        let Fatigue = Student(firstName: "La Fatigue.")
-        let Testtwo = Student(firstName : "Test T")
-        let Test = Student(firstName: "Test")
-    
-        let students = [Bob, Fatigue, Testtwo, Test]
+        print(sweepResult)
         //student is string and answer is string
         for student in students {
             for str in sweepResult {
@@ -47,9 +47,11 @@ class Question {
                 
                 if (student.name == name) {
                     studentAnswers[student.name] = ans
-                    student.history[question] = ans
+                    student.history[questionNum] = ans
                 }
             }
+            //print(student.name)
+            //print(student.history)
         }
     }
 }

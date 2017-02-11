@@ -12,6 +12,30 @@ import AVFoundation
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, ItemSelectionViewControllerDelegate {
 	// MARK: View Controller Life Cycle
 	
+    @IBOutlet weak var StopButton: UIButton!
+    
+    @IBAction func stop(sender: UIButton) {
+        let Bob = Student(firstName: "Bob")
+        Bob.history[1] = "-"
+        let Fatigue = Student(firstName: "La fatigue.")
+        Fatigue.history[1] = "-"
+        let Testtwo = Student(firstName : "Test t")
+        Testtwo.history[1] = "-"
+        let Test = Student(firstName: "Test")
+        Test.history[1] = "-"
+        let st = [Bob, Fatigue, Testtwo, Test]
+
+        let ques = Question(num : 1)
+        ques.students = st
+        //print(ques.students)
+        ques.question = "What's the third letter of the alphabet?"
+        ques.sweep(sweepResult: persistData.input)
+        persistData.results = ques.studentAnswers
+        print(persistData.results)
+
+    }
+    
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -659,29 +683,20 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 				    kCTStrokeColorAttributeName as String : UIColor.black.cgColor])
 				textLayer.isWrapped = true
                 
-                print((textLayer.string as! NSAttributedString).string)
+                //print((textLayer.string as! NSAttributedString).string)
                 
-                let bob = Student(firstName: "Bob")
-                
-                let fatigue = Student(firstName: "La Fatigue.")
-                
-                let testtwo = Student(firstName : "Test T")
-                let test = Student(firstName: "Test")
-
-                let listOfStudents = [bob, fatigue, testtwo, test]
-                for student in listOfStudents {
-                    student.addStudentAnswer(questionNum : 1, sweepSet : persistData.input)
-                    print(student.name)
-                    print(student.history)
-                }
-
+                /*
+                let ques = Question(num : 1)
+                ques.question = "What's the third letter of the alphabet?"
+                ques.sweep(sweepResult: persistData.input)
+                */
                 // Here is the yanking string out part
                 // print((textLayer.string as! NSAttributedString).string)
                 let currentInput = (textLayer.string as! NSAttributedString).string
                 if !persistData.input.contains(currentInput) {
                     persistData.input.insert((textLayer.string as! NSAttributedString).string)
                 }
-                print(persistData.input)
+                //print(persistData.input)
 
 				// Invert the effect of transform of the video preview so the text is orientated with the interface orientation.
 				textLayer.transform = CATransform3DInvert(CATransform3DMakeAffineTransform(previewView.transform))

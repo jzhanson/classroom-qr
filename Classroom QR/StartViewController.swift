@@ -13,6 +13,7 @@ struct persistData {
     static var input: Set<String> = []
     static var parsed = [String: String]()
     static var classes : [classroom] = []
+    static var results = [String: String]()
 }
 
 class StartViewController: UIViewController {

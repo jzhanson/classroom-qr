@@ -480,6 +480,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="stopWithSender:" destination="pYE-xa-CpI" eventType="touchUpInside" id="cDe-JD-1wy"/>
                                     <segue destination="6f0-qq-duZ" kind="presentation" id="wBn-Ud-O74"/>
                                 </connections>
                             </button>
@@ -523,6 +524,7 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="StopButton" destination="hro-jk-MAk" id="R1C-xp-3iX"/>
                         <outlet property="cameraButton" destination="LVm-ag-Lfj" id="7Yg-nk-caj"/>
                         <outlet property="cameraUnavailableLabel" destination="nFV-EL-Pn1" id="xoc-xK-b7e"/>
                         <outlet property="metadataObjectTypesButton" destination="4Ea-Lg-Xeq" id="feH-Gs-m1J"/>
@@ -596,7 +598,11 @@
             <objects>
                 <tabBarController id="WbX-Dc-BBq" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ZBD-cF-cBh">
-                        <barButtonItem key="leftBarButtonItem" title="New Question" id="P8d-e8-Dev"/>
+                        <barButtonItem key="leftBarButtonItem" title="New Question" id="P8d-e8-Dev">
+                            <connections>
+                                <segue destination="pYE-xa-CpI" kind="presentation" id="PcD-BW-fWw"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="SKh-uM-mYt">
                             <connections>
                                 <segue destination="pYE-xa-CpI" kind="presentation" id="4kh-Nf-pTH"/>
@@ -622,7 +628,7 @@
             <objects>
                 <tableViewController id="PBC-n5-MIm" userLabel="Item Selection View Controller" customClass="ItemSelectionViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="N68-f6-mTy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -689,8 +695,8 @@
         <image name="SweepLogo" width="671" height="476"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dGm-JB-UMA"/>
-        <segue reference="Gwm-GI-Bi6"/>
+        <segue reference="rlc-lp-Khb"/>
+        <segue reference="4kh-Nf-pTH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
