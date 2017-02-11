@@ -15,7 +15,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     @IBOutlet weak var StopButton: UIButton!
     
     @IBAction func stop(sender: UIButton) {
-        let Bob = Student(firstName: "Bob")
+        /*let Bob = Student(firstName: "Bob")
         Bob.history[1] = "-"
         let Fatigue = Student(firstName: "La fatigue.")
         Fatigue.history[1] = "-"
@@ -23,14 +23,27 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         Testtwo.history[1] = "-"
         let Test = Student(firstName: "Test")
         Test.history[1] = "-"
-        let st = [Bob, Fatigue, Testtwo, Test]
-
-        let ques = Question(num : 1)
-        ques.students = st
-        //print(ques.students)
-        ques.question = "What's the third letter of the alphabet?"
-        ques.sweep(sweepResult: persistData.input)
-        persistData.results = ques.studentAnswers
+        let st = [Bob, Fatigue, Testtwo, Test]*/
+        if (persistData.currentQuestion == nil) {
+            let ques = Question(quest: "")
+            /*ques.students = st*/
+            ques.students = persistData.currentClass!.students
+            //print(ques.students)
+            ques.question = "What's the third letter of the alphabet?"
+            ques.sweep(sweepResult: persistData.input)
+            persistData.results = ques.studentAnswers
+        }
+        else
+        {
+            let ques = persistData.currentQuestion
+            /*ques.students = st*/
+            ques!.students = persistData.currentClass!.students
+            //print(ques.students)
+            ques!.question = "What's the third letter of the alphabet?"
+            ques!.sweep(sweepResult: persistData.input)
+            persistData.results = ques!.studentAnswers
+        }
+        
         print(persistData.results)
 
     }

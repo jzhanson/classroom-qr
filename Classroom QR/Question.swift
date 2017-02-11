@@ -11,14 +11,17 @@ import UIKit
 
 class Question {
     
+    static var questionNumCount = 0
     var questionNum = 0
     var question = ""
     var solution = ""
     var students = [Student]()
     var studentAnswers = [String : String]()
 
-    init (num: Int) {
-        self.questionNum = num
+    init (quest: String) {
+        self.questionNum = Question.questionNumCount
+        Question.questionNumCount += 1
+        self.question = quest
     }
     
     func question(q : String) {

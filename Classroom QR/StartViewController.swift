@@ -15,6 +15,7 @@ struct persistData {
     static var classes : [classroom] = []
     static var currentClass : classroom? = nil
     static var results = [String: String]()
+    static var currentQuestion : Question? = nil
 }
 
 class StartViewController: UIViewController {

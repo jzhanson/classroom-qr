@@ -25,5 +25,13 @@ class NewClassViewController: UIViewController {
         persistData.currentClass = newClassroom
         print(persistData.classes[0].className)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+
+    }
 
 }

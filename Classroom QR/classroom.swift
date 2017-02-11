@@ -12,6 +12,7 @@ import UIKit
 class classroom {
     var students = [Student]()
     var className = ""
+    var questions: [Question] = []
     
     init(classTitle : String){
         self.className = classTitle
