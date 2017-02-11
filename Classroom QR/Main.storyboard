@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pYE-xa-CpI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8QL-B6-1VL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -169,21 +169,31 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-zv-yii">
-                                <rect key="frame" x="67" y="524" width="240" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-EW-mb1">
+                                <rect key="frame" x="198" y="460" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Generate Answer Cards" image="GenerateAnswerCardsButton.png"/>
+                                <state key="normal" title="Select Question"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beE-tt-Sqm">
+                                <rect key="frame" x="44" y="460" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Question"/>
                                 <connections>
-                                    <segue destination="6Tk-n6-lSB" kind="presentation" id="hlk-zp-gzT"/>
+                                    <segue destination="Ct8-xz-686" kind="presentation" id="rDc-Ko-ViQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-B8-zbE">
-                                <rect key="frame" x="67" y="584" width="240" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nZ-MO-Uvn">
+                                <rect key="frame" x="144" y="536" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Questions" image="QuestionsButton.png"/>
+                                <state key="normal" title="Ask Question"/>
                                 <connections>
-                                    <segue destination="Km5-sk-fHZ" kind="presentation" id="gKV-K3-14J"/>
+                                    <segue destination="pYE-xa-CpI" kind="presentation" id="dGm-JB-UMA"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-B8-zbE">
+                                <rect key="frame" x="138" y="398" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Question Log"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-L3-nBb">
                                 <rect key="frame" x="67" y="467" width="240" height="40"/>
@@ -191,6 +201,14 @@
                                 <state key="normal" title="Add Student" image="AddStudentButton.png"/>
                                 <connections>
                                     <action selector="showEnterStudentAlertWithSender:" destination="iV0-Zn-Gsd" eventType="touchUpInside" id="mjT-35-ulB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-lO-1xq">
+                                <rect key="frame" x="106" y="331" width="166" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Generate Answer Cards"/>
+                                <connections>
+                                    <segue destination="C1M-E9-x9N" kind="presentation" id="PjP-S7-g3c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,32 +219,75 @@
             </objects>
             <point key="canvasLocation" x="-1058.4000000000001" y="1548.5757121439281"/>
         </scene>
-        <!--Generate View Controller-->
-        <scene sceneID="H51-Zm-q3h">
+        <!--Navigation Controller-->
+        <scene sceneID="gBx-Us-pXP">
             <objects>
-                <viewController id="6Tk-n6-lSB" customClass="GenerateViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="C1M-E9-x9N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rL7-h3-a0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PGj-Kj-JkE" kind="relationship" relationship="rootViewController" id="eES-WX-MPm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckg-Ai-9ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052" y="2359"/>
+        </scene>
+        <!--Generate Code View Controller-->
+        <scene sceneID="jeb-Ce-G2g">
+            <objects>
+                <viewController id="PGj-Kj-JkE" customClass="GenerateCodeViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iZ9-mt-ymm"/>
-                        <viewControllerLayoutGuide type="bottom" id="vT0-OR-b02"/>
+                        <viewControllerLayoutGuide type="top" id="hIo-Y4-LOz"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgx-LG-uR9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FAd-Ac-tmz">
+                    <view key="view" contentMode="scaleToFill" id="MoR-0K-IAs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N0q-lM-qpf">
-                                <rect key="frame" x="67" y="28" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enE-sB-d3Q">
+                                <rect key="frame" x="67" y="72" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Codes generated!                                               Scan above code to download or email with share button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-Qz-SVi">
+                                <rect key="frame" x="16" y="346" width="343" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRx-nF-k3i">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="xkh-OO-sA9">
+                                        <connections>
+                                            <action selector="shareButtonWithSender:" destination="PGj-Kj-JkE" id="P9n-QO-y3c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1Og-hy-Fck">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="edV-zZ-zlJ">
+                            <connections>
+                                <segue destination="iV0-Zn-Gsd" kind="popoverPresentation" popoverAnchorBarButtonItem="edV-zZ-zlJ" id="Gwm-GI-Bi6">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="imageView" destination="N0q-lM-qpf" id="9ZZ-0G-6T5"/>
+                        <outlet property="imageView" destination="enE-sB-d3Q" id="3bk-Yo-kjL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hpl-Xf-3bA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQM-Xs-GSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1063.2" y="2330.2848575712146"/>
+            <point key="canvasLocation" x="-103.2" y="2357.2713643178413"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GnW-FA-i9s">
@@ -306,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scJ-06-5vP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="2330"/>
+            <point key="canvasLocation" x="1391.2" y="2329.385307346327"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OZu-79-QXP">
@@ -333,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW0-Z8-9Ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="2328.4857571214393"/>
+            <point key="canvasLocation" x="2271.1999999999998" y="2328.4857571214393"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Tw5-mA-WiX">
@@ -360,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3W-AF-EIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="2329"/>
+            <point key="canvasLocation" x="3215.1999999999998" y="2328.4857571214393"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="hlg-yS-qYF">
@@ -492,7 +553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0O-MT-Spw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3220" y="1877"/>
+            <point key="canvasLocation" x="4159.1999999999998" y="1876.9115442278862"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DLB-5j-xDT">
@@ -561,7 +622,7 @@
             <objects>
                 <tableViewController id="PBC-n5-MIm" userLabel="Item Selection View Controller" customClass="ItemSelectionViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="N68-f6-mTy">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -623,11 +684,13 @@
     </scenes>
     <resources>
         <image name="AddStudentButton.png" width="473" height="87"/>
-        <image name="GenerateAnswerCardsButton.png" width="473" height="88"/>
         <image name="NewClassButton.png" width="474" height="88"/>
-        <image name="QuestionsButton.png" width="474" height="86"/>
         <image name="SelectClassButton.png" width="474" height="87"/>
         <image name="SweepLogo" width="671" height="476"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dGm-JB-UMA"/>
+        <segue reference="Gwm-GI-Bi6"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

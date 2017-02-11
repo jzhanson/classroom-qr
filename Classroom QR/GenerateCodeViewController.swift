@@ -9,8 +9,20 @@
 import Foundation
 import UIKit
 
-class GenerateViewController : UIViewController {
+
+class GenerateCodeViewController : UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func shareButton(sender: UIBarButtonItem) {
+        
+        displayShareSheet(shareContent: "Codes to email are attached!")
+    }
+    
+    func displayShareSheet(shareContent:String) {
+        
+        let activityViewController = UIActivityViewController(activityItems: [shareContent], applicationActivities: nil)
+        present(activityViewController, animated: true, completion: {})
+    }
     
     func generateQRCode(from string : String) -> UIImage? {
     
@@ -38,8 +50,15 @@ class GenerateViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = generateQRCode(from: "This is a QR code")
+        
+//        for student in persistData.classes[0].students {
+//            let image = generateQRCode(from: student.name)
+//            imageView.image = image
+//        }
+        let image = generateQRCode(from: "bart")
         imageView.image = image
+
+        
     }
     
 }

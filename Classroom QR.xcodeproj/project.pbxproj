@@ -21,13 +21,6 @@
 		7071BBF01E4EF3C0005374F7 /* classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEF1E4EF3C0005374F7 /* classroom.swift */; };
 		7071BBF21E4F568F005374F7 /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF11E4F568F005374F7 /* NewClassViewController.swift */; };
 		7071BBF41E4F6B53005374F7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBF31E4F6B53005374F7 /* Question.swift */; };
-		7071BC081E4F7E94005374F7 /* NewClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC071E4F7E94005374F7 /* NewClassButton.png */; };
-		7071BC0A1E4F7EAB005374F7 /* SelectClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC091E4F7EAB005374F7 /* SelectClassButton.png */; };
-		7071BC0C1E4F7EC1005374F7 /* SweepLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */; };
-		7071BC0E1E4F7FAC005374F7 /* AddStudentButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC0D1E4F7FAC005374F7 /* AddStudentButton.png */; };
-		7071BC101E4F7FB5005374F7 /* QuestionsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC0F1E4F7FB5005374F7 /* QuestionsButton.png */; };
-		7071BC121E4F7FBE005374F7 /* GenerateAnswerCardsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC111E4F7FBE005374F7 /* GenerateAnswerCardsButton.png */; };
-		7071BC141E4F808F005374F7 /* CreateClassButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC131E4F808F005374F7 /* CreateClassButton.png */; };
 		7071BC161E4F8A49005374F7 /* AddStudentButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC151E4F8A49005374F7 /* AddStudentButton.png */; };
 		7071BC181E4F8A5F005374F7 /* QuestionsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC171E4F8A5F005374F7 /* QuestionsButton.png */; };
 		7071BC1A1E4F8A65005374F7 /* GenerateAnswerCardsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */; };
@@ -42,6 +35,7 @@
 		294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
 		294FF4A81E4EA76100DC6E82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCodeViewController.swift; sourceTree = "<group>"; };
+		298C97E41E4F889C00462485 /* Classroom QR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Classroom QR.entitlements"; sourceTree = "<group>"; };
 		29C2F3CA1E4EA0E600C0C940 /* Classroom QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classroom QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -51,13 +45,6 @@
 		7071BBEF1E4EF3C0005374F7 /* classroom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classroom.swift; sourceTree = "<group>"; };
 		7071BBF11E4F568F005374F7 /* NewClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
 		7071BBF31E4F6B53005374F7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		7071BC071E4F7E94005374F7 /* NewClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewClassButton.png; path = ../../../Downloads/NewClassButton.png; sourceTree = "<group>"; };
-		7071BC091E4F7EAB005374F7 /* SelectClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SelectClassButton.png; path = ../../../Downloads/SelectClassButton.png; sourceTree = "<group>"; };
-		7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SweepLogo.png; path = ../../../Downloads/SweepLogo.png; sourceTree = "<group>"; };
-		7071BC0D1E4F7FAC005374F7 /* AddStudentButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddStudentButton.png; path = ../../../Downloads/AddStudentButton.png; sourceTree = "<group>"; };
-		7071BC0F1E4F7FB5005374F7 /* QuestionsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = QuestionsButton.png; path = ../../../Downloads/QuestionsButton.png; sourceTree = "<group>"; };
-		7071BC111E4F7FBE005374F7 /* GenerateAnswerCardsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GenerateAnswerCardsButton.png; path = ../../../Downloads/GenerateAnswerCardsButton.png; sourceTree = "<group>"; };
-		7071BC131E4F808F005374F7 /* CreateClassButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CreateClassButton.png; path = ../../../Downloads/CreateClassButton.png; sourceTree = "<group>"; };
 		7071BC151E4F8A49005374F7 /* AddStudentButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddStudentButton.png; path = Assets.xcassets/AddStudentButton.png; sourceTree = "<group>"; };
 		7071BC171E4F8A5F005374F7 /* QuestionsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = QuestionsButton.png; path = Assets.xcassets/QuestionsButton.png; sourceTree = "<group>"; };
 		7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GenerateAnswerCardsButton.png; path = Assets.xcassets/GenerateAnswerCardsButton.png; sourceTree = "<group>"; };
@@ -95,6 +82,7 @@
 		29C2F3CC1E4EA0E600C0C940 /* Classroom QR */ = {
 			isa = PBXGroup;
 			children = (
+				298C97E41E4F889C00462485 /* Classroom QR.entitlements */,
 				29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */,
 				29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */,
 				7071BBF11E4F568F005374F7 /* NewClassViewController.swift */,
@@ -109,17 +97,10 @@
 				7071BBEF1E4EF3C0005374F7 /* classroom.swift */,
 				29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */,
 				7071BC151E4F8A49005374F7 /* AddStudentButton.png */,
-				7071BC0B1E4F7EC1005374F7 /* SweepLogo.png */,
-				7071BC111E4F7FBE005374F7 /* GenerateAnswerCardsButton.png */,
 				7071BC1D1E4F8A6F005374F7 /* NewClassButton.png */,
 				7071BC1B1E4F8A6A005374F7 /* SelectClassButton.png */,
 				7071BC191E4F8A65005374F7 /* GenerateAnswerCardsButton.png */,
 				7071BC171E4F8A5F005374F7 /* QuestionsButton.png */,
-				7071BC131E4F808F005374F7 /* CreateClassButton.png */,
-				7071BC0D1E4F7FAC005374F7 /* AddStudentButton.png */,
-				7071BC091E4F7EAB005374F7 /* SelectClassButton.png */,
-				7071BC0F1E4F7FB5005374F7 /* QuestionsButton.png */,
-				7071BC071E4F7E94005374F7 /* NewClassButton.png */,
 				294FF4A81E4EA76100DC6E82 /* Info.plist */,
 			);
 			path = "Classroom QR";
@@ -157,8 +138,13 @@
 				TargetAttributes = {
 					29C2F3C91E4EA0E600C0C940 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 744WVDY3NJ;
+						DevelopmentTeam = K72FJPB7L5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -187,18 +173,11 @@
 			files = (
 				29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */,
 				7071BC1E1E4F8A6F005374F7 /* NewClassButton.png in Resources */,
-				7071BC081E4F7E94005374F7 /* NewClassButton.png in Resources */,
 				7071BC1A1E4F8A65005374F7 /* GenerateAnswerCardsButton.png in Resources */,
-				7071BC0A1E4F7EAB005374F7 /* SelectClassButton.png in Resources */,
-				7071BC0E1E4F7FAC005374F7 /* AddStudentButton.png in Resources */,
-				7071BC0C1E4F7EC1005374F7 /* SweepLogo.png in Resources */,
-				7071BC101E4F7FB5005374F7 /* QuestionsButton.png in Resources */,
 				7071BC161E4F8A49005374F7 /* AddStudentButton.png in Resources */,
-				7071BC121E4F7FBE005374F7 /* GenerateAnswerCardsButton.png in Resources */,
 				294FF4A91E4EA76100DC6E82 /* Info.plist in Resources */,
 				7071BC1C1E4F8A6A005374F7 /* SelectClassButton.png in Resources */,
 				7071BC181E4F8A5F005374F7 /* QuestionsButton.png in Resources */,
-				7071BC141E4F808F005374F7 /* CreateClassButton.png in Resources */,
 				294FF4A21E4EA57A00DC6E82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 744WVDY3NJ;
+				DEVELOPMENT_TEAM = K72FJPB7L5;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
@@ -337,7 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 744WVDY3NJ;
+				DEVELOPMENT_TEAM = K72FJPB7L5;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
