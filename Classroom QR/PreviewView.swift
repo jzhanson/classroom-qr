@@ -68,8 +68,9 @@ class PreviewView: UIView, UIGestureRecognizerDelegate {
 			need to set the region of interest once in
 			`observeValue(forKeyPath:, of:, change:, context:)`.
 		*/
-		//resizeRegionOfInterestGestureRecognizer.delegate = self
-		//addGestureRecognizer(resizeRegionOfInterestGestureRecognizer)
+		resizeRegionOfInterestGestureRecognizer.delegate = self
+		addGestureRecognizer(resizeRegionOfInterestGestureRecognizer)
+        
 	}
 	
 	deinit {
