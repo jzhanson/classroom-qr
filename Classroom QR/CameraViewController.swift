@@ -664,7 +664,17 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 				    kCTStrokeColorAttributeName as String : UIColor.black.cgColor])
 				textLayer.isWrapped = true
                 
+<<<<<<< HEAD
                 print((textLayer.string as! NSAttributedString).string)
+=======
+                // Here is the yanking string out part
+                // print((textLayer.string as! NSAttributedString).string)
+                let currentInput = (textLayer.string as! NSAttributedString).string
+                if !persistData.input.contains(currentInput) {
+                    persistData.input.insert((textLayer.string as! NSAttributedString).string)
+                }
+                print(persistData.input)
+>>>>>>> 7e35a1a66734b8de7d7d716f7dfd2de97015f17d
 				
 				// Invert the effect of transform of the video preview so the text is orientated with the interface orientation.
 				textLayer.transform = CATransform3DInvert(CATransform3DMakeAffineTransform(previewView.transform))
@@ -766,10 +776,9 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             if metadataObjectOverlayLayer.path!.contains(grabAnswerGestureRecognizer.location(in: previewView), using: .winding, transform: .identity) {
                 if let barcodeMetadataObject = metadataObjectOverlayLayer.metadataObject as? AVMetadataMachineReadableCodeObject {
                     if let received = barcodeMetadataObject.stringValue {
-                        for (student, count) in persistData.students {
+                        for (student, answer) in persistData.parsed {
                             if student == received {
-                                persistData.students[student]! += 1
-                                print(persistData.students[student]!)
+                                print(student)
                             }
                         }
                         
