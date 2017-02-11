@@ -13,6 +13,7 @@ struct persistData {
     static var input: Set<String> = []
     static var parsed = [String: String]()
     static var classes : [classroom] = []
+    static var currentClass : classroom? = nil
     static var results = [String: String]()
 }
 

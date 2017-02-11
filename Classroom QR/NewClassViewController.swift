@@ -22,6 +22,7 @@ class NewClassViewController: UIViewController {
     @IBAction func addClass (sender : UIButton) {
         let newClassroom = classroom(classTitle: (className?.text)!)
         persistData.classes.append(newClassroom)
+        persistData.currentClass = newClassroom
         print(persistData.classes[0].className)
     }
 
