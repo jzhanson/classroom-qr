@@ -12,6 +12,7 @@
 		294FF4A21E4EA57A00DC6E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294FF4A11E4EA57A00DC6E82 /* Main.storyboard */; };
 		294FF4A41E4EA5BD00DC6E82 /* ItemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */; };
 		294FF4A91E4EA76100DC6E82 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 294FF4A81E4EA76100DC6E82 /* Info.plist */; };
+		298C97DB1E4F6DA400462485 /* GenerateCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */; };
 		29C2F3CE1E4EA0E600C0C940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */; };
 		29C2F3D01E4EA0E600C0C940 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */; };
 		29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		294FF4A11E4EA57A00DC6E82 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
 		294FF4A81E4EA76100DC6E82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCodeViewController.swift; sourceTree = "<group>"; };
 		29C2F3CA1E4EA0E600C0C940 /* Classroom QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classroom QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */,
 				294FF4A11E4EA57A00DC6E82 /* Main.storyboard */,
 				29E205701E4F67800050CF0D /* MainClassViewController.swift */,
+				298C97DA1E4F6DA400462485 /* GenerateCodeViewController.swift */,
 				7071BBEF1E4EF3C0005374F7 /* classroom.swift */,
 				29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */,
 				294FF4A81E4EA76100DC6E82 /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298C97DB1E4F6DA400462485 /* GenerateCodeViewController.swift in Sources */,
 				29E205711E4F67800050CF0D /* MainClassViewController.swift in Sources */,
 				7071BBEC1E4EB894005374F7 /* Student.swift in Sources */,
 				29C2F3D01E4EA0E600C0C940 /* StartViewController.swift in Sources */,

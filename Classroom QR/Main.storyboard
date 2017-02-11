@@ -171,6 +171,9 @@
                                 <rect key="frame" x="106" y="333" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Generate Answer Cards"/>
+                                <connections>
+                                    <segue destination="6Tk-n6-lSB" kind="presentation" id="hlk-zp-gzT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-EW-mb1">
                                 <rect key="frame" x="198" y="460" width="109" height="30"/>
@@ -216,6 +219,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwX-Ep-uem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1058.4000000000001" y="1548.5757121439281"/>
+        </scene>
+        <!--Generate View Controller-->
+        <scene sceneID="H51-Zm-q3h">
+            <objects>
+                <viewController id="6Tk-n6-lSB" customClass="GenerateViewController" customModule="Classroom_QR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iZ9-mt-ymm"/>
+                        <viewControllerLayoutGuide type="bottom" id="vT0-OR-b02"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FAd-Ac-tmz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N0q-lM-qpf">
+                                <rect key="frame" x="67" y="28" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="N0q-lM-qpf" id="9ZZ-0G-6T5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpl-Xf-3bA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1063.2" y="2330.2848575712146"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GnW-FA-i9s">
