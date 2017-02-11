@@ -138,7 +138,7 @@
 				TargetAttributes = {
 					29C2F3C91E4EA0E600C0C940 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = K72FJPB7L5;
+						DevelopmentTeam = 744WVDY3NJ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -303,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K72FJPB7L5;
+				DEVELOPMENT_TEAM = 744WVDY3NJ;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
@@ -316,7 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K72FJPB7L5;
+				DEVELOPMENT_TEAM = 744WVDY3NJ;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
