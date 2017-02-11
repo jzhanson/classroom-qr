@@ -42,9 +42,9 @@ class Student {
     var name = ""
     var history = [Int : String]()
     
-    init(firstName : String, QA : Dictionary<Int, String>) {
+    init(firstName : String) {
         self.name = firstName
-        self.history = QA
+        self.history = [Int : String]()
     }
     
     func addStudentAnswer (questionNum : Int, sweepSet : Set<String>) {

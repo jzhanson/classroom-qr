@@ -661,24 +661,26 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 
                 print((textLayer.string as! NSAttributedString).string)
                 
-                let bob = Student(firstName: "Bob", QA : [1:"A"])
-                //bob.name = "Bob"
-                //bob.history = [1:"A"]
+                let bob = Student(firstName: "Bob")
                 
-                let test = Student(firstName: "Test", QA: [1:"B"])
-                //test.name = "Test"
-                //test.history = [1:"B"]
+                let fatigue = Student(firstName: "La Fatigue.")
                 
+                let testtwo = Student(firstName : "Test T")
+                let test = Student(firstName: "Test")
+
+                let listOfStudents = [bob, fatigue, testtwo, test]
+                for student in listOfStudents {
+                    student.addStudentAnswer(questionNum : 1, sweepSet : persistData.input)
+                    print(student.name)
+                    print(student.history)
+                }
+                /*
                 for i in persistData.input {
                     let len = i.length - 2
                     let studentName = i[0..<len]
-                    if (bob.name == studentName) {
-                        print("ITS BOB!!!")
-                    } else if (test.name == studentName) {
-                        print("ITS TEST!!!!")
-                    }
+                    
                 }
-
+*/
                 // Here is the yanking string out part
                 // print((textLayer.string as! NSAttributedString).string)
                 let currentInput = (textLayer.string as! NSAttributedString).string
