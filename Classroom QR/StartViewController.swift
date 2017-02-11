@@ -12,6 +12,7 @@ import UIKit
 struct persistData {
     static var input: Set<String> = []
     static var parsed = [String: String]()
+    static var classes : [classroom] = []
 }
 
 class StartViewController: UIViewController {

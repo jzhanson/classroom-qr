@@ -81,12 +81,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Class"/>
                                 <connections>
+                                    <action selector="addClassWithSender:" destination="yFv-xS-Lau" eventType="touchUpInside" id="1Qw-Hb-f2R"/>
                                     <segue destination="gsB-Yt-98Z" kind="presentation" id="ops-6y-4Qg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="className" destination="FfV-n0-dJH" id="9qu-GN-bot"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMx-Uh-vgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

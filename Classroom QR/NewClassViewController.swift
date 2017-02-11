@@ -16,4 +16,13 @@ class NewClassViewController: UIViewController {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBOutlet var className: UITextField?
+    
+    @IBAction func addClass (sender : UIButton) {
+        let newClassroom = classroom(classTitle: (className?.text)!)
+        persistData.classes.append(newClassroom)
+        print(persistData.classes[0].className)
+    }
+
 }
