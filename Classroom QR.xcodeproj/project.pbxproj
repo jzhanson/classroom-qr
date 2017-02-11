@@ -11,11 +11,11 @@
 		294FF4A01E4EA57300DC6E82 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294FF49F1E4EA57300DC6E82 /* PreviewView.swift */; };
 		294FF4A21E4EA57A00DC6E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294FF4A11E4EA57A00DC6E82 /* Main.storyboard */; };
 		294FF4A41E4EA5BD00DC6E82 /* ItemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */; };
-		294FF4A71E4EA5C700DC6E82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294FF4A61E4EA5C700DC6E82 /* LaunchScreen.storyboard */; };
 		294FF4A91E4EA76100DC6E82 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 294FF4A81E4EA76100DC6E82 /* Info.plist */; };
 		29C2F3CE1E4EA0E600C0C940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */; };
 		29C2F3D01E4EA0E600C0C940 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */; };
 		29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */; };
+		7071BBEC1E4EB894005374F7 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071BBEB1E4EB894005374F7 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +23,12 @@
 		294FF49F1E4EA57300DC6E82 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		294FF4A11E4EA57A00DC6E82 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
-		294FF4A51E4EA5C700DC6E82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		294FF4A81E4EA76100DC6E82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C2F3CA1E4EA0E600C0C940 /* Classroom QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classroom QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7071BBEB1E4EB894005374F7 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,10 @@
 				29C2F3CD1E4EA0E600C0C940 /* AppDelegate.swift */,
 				29C2F3CF1E4EA0E600C0C940 /* StartViewController.swift */,
 				294FF49F1E4EA57300DC6E82 /* PreviewView.swift */,
+				7071BBEB1E4EB894005374F7 /* Student.swift */,
 				294FF49D1E4EA54A00DC6E82 /* CameraViewController.swift */,
 				294FF4A31E4EA5BD00DC6E82 /* ItemSelectionViewController.swift */,
 				294FF4A11E4EA57A00DC6E82 /* Main.storyboard */,
-				294FF4A61E4EA5C700DC6E82 /* LaunchScreen.storyboard */,
 				29C2F3D41E4EA0E600C0C940 /* Assets.xcassets */,
 				294FF4A81E4EA76100DC6E82 /* Info.plist */,
 			);
@@ -106,7 +106,7 @@
 				TargetAttributes = {
 					29C2F3C91E4EA0E600C0C940 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = K72FJPB7L5;
+						DevelopmentTeam = 744WVDY3NJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,7 +134,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294FF4A71E4EA5C700DC6E82 /* LaunchScreen.storyboard in Resources */,
 				29C2F3D51E4EA0E600C0C940 /* Assets.xcassets in Resources */,
 				294FF4A91E4EA76100DC6E82 /* Info.plist in Resources */,
 				294FF4A21E4EA57A00DC6E82 /* Main.storyboard in Resources */,
@@ -148,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7071BBEC1E4EB894005374F7 /* Student.swift in Sources */,
 				29C2F3D01E4EA0E600C0C940 /* StartViewController.swift in Sources */,
 				294FF4A01E4EA57300DC6E82 /* PreviewView.swift in Sources */,
 				29C2F3CE1E4EA0E600C0C940 /* AppDelegate.swift in Sources */,
@@ -157,18 +157,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		294FF4A61E4EA5C700DC6E82 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				294FF4A51E4EA5C700DC6E82 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ../../../Downloads/AVCamBarcode/AVCamBarcode;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		29C2F3DA1E4EA0E600C0C940 /* Debug */ = {
@@ -268,10 +256,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K72FJPB7L5;
+				DEVELOPMENT_TEAM = 744WVDY3NJ;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jzhanson.Classroom-QR";
+				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -281,10 +269,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K72FJPB7L5;
+				DEVELOPMENT_TEAM = 744WVDY3NJ;
 				INFOPLIST_FILE = "Classroom QR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jzhanson.Classroom-QR";
+				PRODUCT_BUNDLE_IDENTIFIER = "Classroom-QR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
